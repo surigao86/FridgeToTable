@@ -27,6 +27,7 @@
     display: inline-block;
     float: right;
     font-weight: 600;
+    padding: 10px;
 }
 .main-nav a {
     color: #444;
@@ -40,8 +41,29 @@
     background: url('../images/homepage_image.jpg') no-repeat center fixed;
     background-size: cover;
 }
+
+.homepage__bottom {
+    position: relative;
+    height: 400px;
+}
+
+
+.homepage__bottom--bg {
+    background: url('../images/image2.jpg') no-repeat center fixed;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    opacity: 0.5;
+    
+}
+
+.homepage__bottom .container {
+    position: relative;
+    padding: 100px 0;
+}
 .homepage__hero {
-    padding: 40px 0;
+    padding: 40px 0px;
 }
 .homepage__hero h1 {
     color: #fff;
@@ -59,9 +81,6 @@
     margin: 20px auto 40px;
 }
 
-.homepage__bottom {
-    padding: 100px 0;
-}
 
 .footer {
     background: #555;
