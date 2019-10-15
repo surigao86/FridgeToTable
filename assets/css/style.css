@@ -35,32 +35,27 @@
 
 
 .hero {
-    padding: 80px 0 0;
+    padding: 80px 0;
     align-items: center;
     min-height: 500px;
+    background-size: cover;
+}
+.hero--1 {
     background: url('../images/homepage_image.jpg') no-repeat center fixed;
     background-size: cover;
 }
-
-.homepage__bottom {
-    position: relative;
-    height: 400px;
-}
-
-
-.homepage__bottom--bg {
-    background: url('../images/image2.jpg') no-repeat center fixed;
+.hero--2 {
+    background: url('../images/image1.jpg') no-repeat center fixed;
     background-size: cover;
-    height: 400px;
-    width: 100%;
-    position: absolute;
-    opacity: 0.5;
-    
 }
+.hero--3 {
+    background: url('../images/image4.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
 
 .homepage__bottom .container {
     position: relative;
-    padding: 100px 0;
 }
 .homepage__hero {
     padding: 40px 0px;
@@ -68,6 +63,7 @@
 .homepage__hero h1 {
     color: #fff;
     font-weight: 600;
+    text-shadow: 0 2px 10px #000;
 }
 .homepage__contentwrap {
     margin: 40px auto 0;
@@ -81,6 +77,34 @@
     margin: 20px auto 40px;
 }
 
+.homepage__bottom {
+    position: relative;
+    height: 400px;
+    padding: 100px 0 0;
+}
+.homepage__bottom--bg {
+    background: url('../images/image2.jpg') no-repeat center fixed;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+}
+.homepage__bottom-content {
+    width: 400px;
+    padding: 30px;
+    border: 5px solid #fff;
+}
+
+
+.homepage__columns {
+    padding: 6rem 0;
+}
+
+.homepage__columns h1 {
+    font-size: 1.8rem;
+}
 
 .footer {
     background: #555;
@@ -88,4 +112,9 @@
 }
 .footer .copyright {
     padding: 20px 0;
+}
+
+.homepage {
+    background: url('../images/homepage_image.jpg') no-repeat center fixed;
+    background-size: cover;
 }
