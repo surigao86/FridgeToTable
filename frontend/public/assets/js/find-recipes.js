@@ -44,6 +44,9 @@ function getRecipie() {
     });
   };
 
+
+
+
   function getSearchResults() {
     var searchInput = $("#searchinput").val();
     var recipieURL = `https://api.edamam.com/search?q=${searchInput}&app_id=${APPID}&app_key=${APIKEY}`;
@@ -99,15 +102,19 @@ function getRecipie() {
     }
   });
 
+  // postRecent();
+
 }
 
 
 getRecipie();
 
 
+//Trying to Link Firebase to Update By Pushing Recipes That Are Clicked By User
+
 function postRecent(){
-  let link = document.getElementsByClassName("recipesLink");
-  $(link).on("click", function(){
+  console.log("yessir")
+  // $(link).on("click", function(){
     console.log("hi");
   let firebaseConfig = {
     apiKey: "AIzaSyBfH55gNs_qlHhkGt0BF_YF6y9-UvLf69U",
@@ -124,10 +131,8 @@ function postRecent(){
 
   var database = firebase.database();
 
-  console.log(response.hits)
 
-
-  let recipe = h3.getAttribute("name");
+  let recipe = $(document).getAttribute("name");
   let image = response.hits[i].recipe.image;
   let link = response.hits[i].recipe.url;
   let hitCount = 0;
@@ -148,6 +153,6 @@ function postRecent(){
   database.ref().on("child_added", function(childSnapshot) {
     console.log(childSnapshot.val());
   });  
-})
+// })
 }
-postRecent();
+// postRecent();
