@@ -9,6 +9,7 @@ app.use(express.json());
 
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
+// require("./public/assets/js/mostHits")(app);
 
 // app.get("/", function(req, res){
 //   res.send("welcome")
