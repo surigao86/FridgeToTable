@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Fridge To Table</title>
 </head>
-<body class="homepage">
+<body class="find-recipes">
     <div class="headerwrap">
         <div class="container">
             <div class="row">
@@ -20,7 +20,7 @@
                 <div class="col-md-8">
                     <ul class="main-nav">
                         <li><a href="find-recipes">Find Recipes</a></li>
-                        <li><a href="most-search">Trending Recipe</a></li>
+                        <li><a href="trending">Trending Recipe</a></li>
                     </ul>
                 </div>
             </div>
@@ -28,46 +28,46 @@
     </div>
     <div class="hero">
         <div class="container">
-            <div class="homepage__hero">
+            <div class="find__hero">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Search Recipe" aria-label="Search Recipe" >
+                    <input type="text" id="searchinput" class="form-control" placeholder="Search Recipe" aria-label="Search Recipe" >
                     <div class="input-group-append">
                         <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
                     </div>
-                </div>
-                        
+                </div>     
+            </div>
+
+            <div class="search-results">
+
             </div>
         </div>
-        
-        
     </div>
     
-    <div class="homepage_botoom_footer">
-        <div class="homepage_bottom--bg"></div>
+    <div class="bottom__columns">
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-4">
-                        <h1>Our Company</h1>
-                        <p><a href="#">Fridge to Table</a></p>
-                        <p><a href="#">Founders</p></a>
-                        <p><a href="#">Reviews</p></a>
-                    </div>
-                    <div class="col-md-4">
-                        <h1>Contact</h1>
-                        <p><a href="#">Emails</p></a>
-                        <p><a href="#">Help Topics</p></a>
-                        <p><a href="#">Support</p></a>
-                    </div>
-                    <div class="col-md-4">
-                        <h1>Legal</h1>
-                        <p><a href="#">Terms and Conditions</p></a>
-                        <p><a href="#">Privacy Policy</p></a>
-                        <p><a href="#">Accessibility</p></a>
-
+                    <h1>Our Company</h1>
+                    <p><a href="index">Fridge to Table</a></p>
+                    <p><a href="index">Founders</p></a>
+                    <p><a href="index">Reviews</p></a>
+                </div>
+                <div class="col-md-4">
+                    <h1>Contact</h1>
+                    <p><a href="index">Emails</p></a>
+                    <p><a href="index">Help Topics</p></a>
+                    <p><a href="index">Support</p></a>
+                </div>
+                <div class="col-md-4">
+                    <h1>Legal</h1>
+                    <p><a href="index">Terms and Conditions</p></a>
+                    <p><a href="index">Privacy Policy</p></a>
+                    <p><a href="index">Accessibility</p></a>
                 </div>
             </div>
-            
         </div>
+    </div>
+    
     <footer class="footer text-center">
         <div class="container">
             <div class="copyright">
@@ -77,7 +77,8 @@
     </footer>
 
 
-    
+    <script type="text/javascript" src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/find-recipes.js"></script>
 </body>
 </html>
 
