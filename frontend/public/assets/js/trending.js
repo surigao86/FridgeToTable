@@ -33,7 +33,7 @@ function getTrending(){
 
 //Your web app's Firebase configuration
 
-  // let recipe = "Chocolate Chip Cookies";
+  // let recipe = "";
   // let image = "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60";
   // let link = "https://www.verybestbaking.com/recipes/18476/original-nestle-toll-house-chocolate-chip-cookies/";
   // let hitCount = 0;
