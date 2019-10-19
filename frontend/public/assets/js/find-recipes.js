@@ -1,12 +1,11 @@
 function getRecipie(){
-    var userSearch = "chicken";
     var APPID = "da9f95d8";
     var APIKEY = "9d8967ad9437f20e94e94856d53a69ea";
     // var recipieURL = `https://api.edamam.com/recipes/app_id=${APPID}&app_key=${APIKEY}q=${userSearch}`;
 
     function getSearchResults(){
-        var searchinput = $('#searchinput').val();
-        var recipieURL = `https://api.edamam.com/search?q=${searchinput}&app_id=${APPID}&app_key=${APIKEY}`;
+        var searchInput = $('#searchinput').val();
+        var recipieURL = `https://api.edamam.com/search?q=${searchInput}&app_id=${APPID}&app_key=${APIKEY}`;
 
         // this clears the .search-results container
         $('.search-results').html('');
@@ -20,7 +19,7 @@ function getRecipie(){
             // console.log(JSON.stringify(response));
             console.log(response.hits.length);
             
-            for (let i = 0; i < response.hits.length; i++) {
+            for (let i = 0; i < 9; i++) {
                 // const element = array[i];
                 var div = '<a href="'+ response.hits[i].recipe.url +'"><div class="recipe-image">';
                     div += '<img src="'+ response.hits[i].recipe.image +'">';
@@ -55,8 +54,6 @@ function getRecipie(){
             getSearchResults();
         }
     });
-
-
     
 
 };
