@@ -5,8 +5,8 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../find-recipes.html"));
   });
 
-  app.get("/most-search", function(reg, res) {
-    res.sendFile(path.join(__dirname, "../most-search.html"));
+  app.get("/trending", function(reg, res) {
+    res.sendFile(path.join(__dirname, "../trending.html"));
   });
 
   app.get("*", function(reg, res) {
