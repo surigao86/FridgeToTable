@@ -1,7 +1,34 @@
+const express = require("express");
+const app = express();
+const mysql = require("mysql");
+
+
 //const recipeData = require("../frontend/data/recipeData");
 const axios = require("axios");
 var cors = require("cors");
 module.exports = function(app){
+  app.get("/api/trending", cors(), (req, res) => {
+    let connection = mysql.createConnection({
+      host: "localhost",
+      port: "3306",
+      user: "root",
+      password: "root",
+      database: "trendingRecipes"
+    });
+
+    connection.connect();
+
+    connection.query("SELECT recipe_name FROM recipes", function(err, res,fields) {
+      if (err) throw err;
+  
+      // Log all results of the SELECT statement
+      console.log(res);
+    })      
+    
+    connection.end();
+
+  })
+
    app.get("/api/recipes", cors(), (req, res) =>{
 
     
